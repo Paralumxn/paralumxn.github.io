@@ -151,7 +151,7 @@ function gitlab() {
                 },
                 willClose: () => {
                     clearInterval(timerInterval)
-                    window.open("https://gitlab.com/KanonBlanc")
+                    window.open("https://gitlab.com/Paralumxn")
                 }
             })
         }
@@ -182,7 +182,8 @@ function bubble1() {
                 },
                 willClose: () => {
                     clearInterval(timerInterval)
-                    window.open("https://paralumxn.github.io/first-message.html")
+                    window.open("https://paralumxn.github.io/docs/assets/pages/first-message.html")
+                    
                 }
             })
         }
