@@ -84,16 +84,6 @@ ul.navbar-nav .nav-item .nav-link {
   color: indianred;
 }
 
-@media (max-width: 768px) {
-  ul.navbar-nav, ul.navbar-nav li {
-    display: inline-block;
-  }
-
-  ul.navbar-nav .nav-item .nav-link {
-    margin: 10px 20px;
-  }
-}
-
 @keyframes bubblesAnimation {
   0% {
     margin-top: 70px;
@@ -200,4 +190,79 @@ ul.navbar-nav .nav-item .nav-link {
   height: 200px;
   position: absolute;
   width: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+  ul.navbar-nav, ul.navbar-nav li {
+    display: inline-block;
+  }
+
+  ul.navbar-nav .nav-item .nav-link {
+    margin: 10px 20px;
+  }
+
+  .one {
+    -webkit-animation: bubblesAnimation 20s linear infinite, sides 2s ease-in-out infinite alternate;
+    -moz-animation: bubblesAnimation 20s linear infinite, sides 2s ease-in-out infinite alternate;
+    animation: bubblesAnimation 20s linear infinite, sides 2s ease-in-out infinite alternate;
+  
+    left: -10%;
+    top: 50%;
+  
+    -webkit-transform: scale(0.27);
+    -moz-transform: scale(0.027);
+    transform: scale(0.27);
+  }
+  
+  .two {
+    -webkit-animation: bubblesAnimation 20s linear infinite, sides 2s ease-in-out infinite alternate;
+    -moz-animation: bubblesAnimation 20s linear infinite, sides 2s ease-in-out infinite alternate;
+    animation: bubblesAnimation 20s linear infinite, sides 2s ease-in-out infinite alternate;
+  
+    left: -9%;
+    top: 75%;
+  
+    -webkit-transform: scale(0.27);
+    -moz-transform: scale(0.027);
+    transform: scale(0.27);
+  }
+  
+  .three {
+    -webkit-animation: bubblesAnimation 20s linear infinite, sides 2s ease-in-out infinite alternate;
+    -moz-animation: bubblesAnimation 20s linear infinite, sides 2s ease-in-out infinite alternate;
+    animation: bubblesAnimation 20s linear infinite, sides 2s ease-in-out infinite alternate;
+  
+    left: 50%;
+    top: 50%;
+  
+    -webkit-transform: scale(0.27);
+    -moz-transform: scale(0.027);
+    transform: scale(0.27);
+  }
+  
+  .four {
+    -webkit-animation: bubblesAnimation 20s linear infinite, sides 2s ease-in-out infinite alternate;
+    -moz-animation: bubblesAnimation 20s linear infinite, sides 2s ease-in-out infinite alternate;
+    animation: bubblesAnimation 20s linear infinite, sides 2s ease-in-out infinite alternate;
+  
+    left: 50%;
+    top: 75%;
+  
+    -webkit-transform: scale(0.27);
+    -moz-transform: scale(0.027);
+    transform: scale(0.27);
+  }
+  
+  .five {
+    -webkit-animation: bubblesAnimation 20s linear infinite, sides 2s ease-in-out infinite alternate;
+    -moz-animation: bubblesAnimation 20s linear infinite, sides 2s ease-in-out infinite alternate;
+    animation: bubblesAnimation 20s linear infinite, sides 2s ease-in-out infinite alternate;
+
+    left: 20%;
+    top: 62%;
+  
+    -webkit-transform: scale(0.27);
+    -moz-transform: scale(0.027);
+    transform: scale(0.27);
+  }
 }
