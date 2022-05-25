@@ -58,6 +58,7 @@ body {
     font-family: "FiraCode";
     color: white;
     margin: 50px;
+    text-transform: uppercase;
 }
 
 .content-message {
@@ -66,4 +67,20 @@ body {
     color: whitesmoke;
     margin: 20px;
     text-transform: uppercase;
+}
+
+.hiddenMessage {
+  text-decoration: none;
+}
+
+.swal2-modal {
+  background-image: linear-gradient(grey, black);
+}
+
+.swal2-html-container {
+  color: whitesmoke;
+}
+
+.swal2-timer-progress-bar {
+  background-color: whitesmoke;
 }
