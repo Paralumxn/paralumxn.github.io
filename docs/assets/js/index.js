@@ -182,7 +182,7 @@ function bubble1() {
                 },
                 willClose: () => {
                     clearInterval(timerInterval)
-                    window.open("https://paralumxn.github.io/docs/assets/pages/first-message.html")
+                    window.location.replace("https://paralumxn.github.io/docs/assets/pages/first-message.html")
                     
                 }
             })

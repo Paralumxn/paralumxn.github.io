@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "FiraCode";
+    src: url(../font/FiraCode-Regular.ttf) format('truetype');
+}
+
+body {
+    background-image: linear-gradient(grey, black);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    font-family: FiraCode;
+}
+
+.title-message {
+    font-size: 50px;
+    font-family: "FiraCode";
+    color: white;
+    margin: 50px;
+    text-transform: uppercase;
+}
+
+.content-message {
+    font-size: 25px;
+    font-family: "FiraCode";
+    color: whitesmoke;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+.swal2-modal {
+  background-image: linear-gradient(grey, black);
+}
+
+.swal2-html-container {
+  color: whitesmoke;
+}
+
+.swal2-timer-progress-bar {
+  background-color: whitesmoke;
+}
+
+.hiddenMessage {
+    text-decoration: none;
+}

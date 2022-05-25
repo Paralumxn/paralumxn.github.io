@@ -1,5 +1,3 @@
-
-
 function hiddenMessage() {
     swal.fire({
         timer: 5000,
@@ -24,7 +22,8 @@ function hiddenMessage() {
                 },
                 willClose: () => {
                     clearInterval(timerInterval)
-                    window.open("https://paralumxn.github.io/docs/assets/pages/third-message.html")
+                    //window.location.replace("https://paralumxn.github.io/docs/assets/pages/third-message.html")
+                    window.location.replace("file:///C:/Users/Jean/Desktop/SHORTCUT/Personal/docs/assets/pages/first-message.html")
                 }
             })
         }
