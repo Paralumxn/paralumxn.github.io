@@ -23,7 +23,6 @@ function hiddenMessage() {
                 willClose: () => {
                     clearInterval(timerInterval)
                     window.location.replace("https://paralumxn.github.io/docs/assets/pages/third-message.html")
-                    
                 }
             })
         }

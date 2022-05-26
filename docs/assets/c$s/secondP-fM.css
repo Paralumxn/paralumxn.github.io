@@ -124,5 +124,6 @@ body {
     
     p {
         padding: 0px 20px;
+        width: 0px;
     }
   }

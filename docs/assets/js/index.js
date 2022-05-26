@@ -113,6 +113,7 @@ function confirm1button() {
                     willClose: () => {
                         clearInterval(timerInterval)
                         window.location.replace("https://paralumxn.github.io/docs/assets/page/secondP-f.html")
+                        
                     }
                 })
             }
