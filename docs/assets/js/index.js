@@ -58,7 +58,9 @@ function puzzle1() {
 // puzzle1field
 // confirm1button
 
-$(document).on("keypress", "input", function(e){
+var input = document.getElementById('puzzle1field')
+
+$(document).on("keypress", input, function(e){
     if(e.which == 13){
         //var inputVal = $(this).val();
         //alert("You've entered: " + inputVal);
@@ -88,6 +90,8 @@ function confirm1button() {
     } else if(answer1swal === rightAnswer || answer1swal === rightAnswer1) {
         swal.fire({
             html: "You got the correct answer!<br>Do you want to proceed to the hidden message?",
+            imageUrl: "https://thumbs.dreamstime.com/b/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed-male-senior-female-patient-32154012.jpg", 
+            imageWidth: "200px",
             allowEscapeKey: false,
             allowOutsideClick: false,
             showCancelButton: true,
