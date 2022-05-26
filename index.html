@@ -19,7 +19,6 @@
 
         <!-- Others -->
             <link rel="stylesheet" href="docs/assets/css/index.css">
-            <link rel="stylesheet" href="docs/assets/css/mobile.css">
             <link rel="stylesheet" href="docs/assets/css/function.css">
             <link rel="icon" href="docs/assets/images/logo/logo.png">
             <script src="docs/assets/js/index.js"></script>
@@ -28,6 +27,7 @@
     </head>
     <body>
         <div class="container">
+            <div id="clock" class="clock"></div>
             <div class="content">
                 <div class="title" onclick="bubble1()">
                     Paralumxn
@@ -40,21 +40,23 @@
                           </button>
                           <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                              <li class="nav-item">
-                                <a class="nav-link" id="google" onclick="google()"><i class="fa-brands fa-google"></i></a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" id="stackoverflow" onclick="stackoverflow()"><i class="fa-brands fa-stack-overflow"></i></span></a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" id="discord" onclick="discord()"><i class="fa-brands fa-discord"></i></a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" id="github" onclick="github()"><i class="fa-brands fa-github"></i></a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" id="gitlab" onclick="gitlab()"><i class="fa-brands fa-gitlab"></i></a>
-                              </li>
+                              <div class="row">
+                                <li class="nav-item col">
+                                  <a class="nav-link" id="google" onclick="google()"><i class="fa-brands fa-google"></i></a>
+                                </li>
+                                <li class="nav-item col">
+                                  <a class="nav-link" id="stackoverflow" onclick="stackoverflow()"><i class="fa-brands fa-stack-overflow"></i></span></a>
+                                </li>
+                                <li class="nav-item col">
+                                  <a class="nav-link" id="discord" onclick="discord()"><i class="fa-brands fa-discord"></i></a>
+                                </li>
+                                <li class="nav-item col">
+                                  <a class="nav-link" id="github" onclick="github()"><i class="fa-brands fa-github"></i></a>
+                                </li>
+                                <li class="nav-item col">
+                                  <a class="nav-link" id="gitlab" onclick="gitlab()"><i class="fa-brands fa-gitlab"></i></a>
+                                </li>
+                              </div>
                             </ul>
                           </div>
                         </div>

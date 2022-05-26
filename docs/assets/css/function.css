@@ -9,3 +9,7 @@
 *::-moz-selection {
     background: none;
 }
+
+.clock {
+    color:whitesmoke;
+}

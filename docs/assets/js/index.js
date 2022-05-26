@@ -2,7 +2,7 @@ function google() {
     swal.fire({
         allowEscapeKey: false,
         allowOutsideClick: false,
-        html: "Are you sure you want to go to this page?",
+        html: "Are you sure you want to go to this <u style='text-decoration: none;' onclick='puzzle1()'>page?</u>",
         icon: "question",
         showConfirmButton: true,
         showCancelButton: true,
@@ -28,6 +28,96 @@ function google() {
             })
         }
     })
+}
+
+function puzzle1() {
+    swal.fire({
+        allowEscapeKey: false,
+        allowOutsideClick: false,
+        html: "It looks like you find other puzzle to finished.<br>Do you want to finish this puzzle?",
+        icon: "question",
+        showConfirmButton: true,
+        showCancelButton: true
+    }).then((result) => {
+        if(result.isConfirmed) {
+            swal.fire({
+                allowEscapeKey: false,
+                allowOutsideClick: false,
+                timer: 5000,
+                timerProgressBar: true,
+                html: "What icon showed up on the first sweet alert before this one?<br><br>" + 
+                "<input placeholder='Put your answer here' type='text' class='form-control puzzle1field' id='puzzle1field'><br>" +
+                "<button class='btn btn-primary' onclick='confirm1button()' id='confirm1button'>CONFIRM</button>",
+                showConfirmButton: false,
+                showCancelButton: false,
+            })
+        }
+    })
+}
+
+// puzzle1field
+// confirm1button
+
+function confirm1button(buttonName, e) {
+    
+
+    var answer1swal = $('#puzzle1field').val();
+    var rightAnswer = "question"
+    var rightAnswer1 = "QUESTION"
+
+    if(answer1swal == "" || answer1swal == null || answer1swal == " ") {
+        swal.fire({
+            html: "Enter a valid answer before clicking the button.",
+            allowEscapeKey: false,
+            allowOutsideClick: false,
+            timer: 3000,
+            timerProgressBar: true,
+            showConfirmButton: false,
+            showCancelButton: false,
+            icon: "warning"
+        })
+    } else if(answer1swal === rightAnswer || answer1swal === rightAnswer1) {
+        swal.fire({
+            html: "You got the correct answer!<br>Do you want to proceed to the hidden message?",
+            allowEscapeKey: false,
+            allowOutsideClick: false,
+            showCancelButton: true,
+            showConfirmButton: true,
+            icon: "success"
+        }).then((result) => {
+            if(result.isConfirmed) {
+                swal.fire({
+                    html: "Redirecting...",
+                    allowEscapeKey: false,
+                    allowOutsideClick: false,
+                    showCancelButton: false,
+                    showConfirmButton: false,
+                    timer: 3000,
+                    timerProgressBar: true,
+                    icon: "info",
+                    didOpen: () => {
+                        timerInterval = setInterval(() => {
+                        }, 100)
+                    },
+                    willClose: () => {
+                        clearInterval(timerInterval)
+                        window.location.replace("")
+                    }
+                })
+            }
+        })
+    } else if(answer1swal != rightAnswer1 || answer1swal != rightAnswer) {
+        swal.fire({
+            html: "You entered an incorrect password.",
+            timer: 3000,
+            timerProgressBar: true,
+            showCancelButton: false,
+            showConfirmButton: false,
+            allowEscapeKey: false,
+            allowOutsideClick: false,
+            icon: "warning"
+        })
+    } 
 }
 
 function stackoverflow() {
