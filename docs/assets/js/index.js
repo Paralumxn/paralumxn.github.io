@@ -70,8 +70,6 @@ $(document).on("keypress", input, function(e){
 });
 
 function confirm1button() {
-    
-
     var answer1swal = $('#puzzle1field').val();
     var rightAnswer = "question"
     var rightAnswer1 = "QUESTION"
@@ -114,7 +112,7 @@ function confirm1button() {
                     },
                     willClose: () => {
                         clearInterval(timerInterval)
-                        window.location.replace("")
+                        window.location.replace("https://paralumxn.github.io/docs/assets/page/secondP-f.html")
                     }
                 })
             }

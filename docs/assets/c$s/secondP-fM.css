@@ -53,39 +53,28 @@ body {
     font-family: FiraCode;
 }
 
-.content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-}
-
-.title {
+.title-message {
     font-size: 50px;
+    font-family: "FiraCode";
     color: white;
+    margin: 50px;
+    text-transform: uppercase;
 }
 
-.navbar-toggler {
-    margin: auto;
+.date-message {
+    font-size: 35px;
+    font-family: "FiraCode";
+    color: indianred;
+    margin: 10px;
+    text-transform: uppercase;
 }
 
-ul.navbar-nav .nav-item .nav-link {
-  font-size: 20px;
-  margin: 10px 30px;
-  cursor: pointer;
-  transition: 0.2s ease;
-  color: white;
-}
-
-#google:hover,
-#stackoverflow:hover,
-#discord:hover,
-#github:hover,
-#gitlab:hover {
-  transform: scale(2.0);
-  transition: 0.2s ease;
-  color: indianred;
+.content-message {
+    font-size: 25px;
+    font-family: "FiraCode";
+    color: whitesmoke;
+    margin: 20px;
+    text-transform: uppercase;
 }
 
 .swal2-modal {
@@ -100,8 +89,40 @@ ul.navbar-nav .nav-item .nav-link {
   background-color: whitesmoke;
 }
 
-.puzzle1field {
-  color: whitesmoke;
-  background-image: linear-gradient(grey, white);
+.hiddenMessage {
+    text-decoration: none;
 }
 
+.content {
+    padding: 0px 50px;
+}
+
+.content-side {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+}
+
+.matrix>li {
+    list-style: none;
+    color: whitesmoke;
+    padding: 10px 0px;
+    margin: 0;
+  }
+
+  p {
+      cursor: default;
+      color: whitesmoke;
+      width: 219px;
+  }
+
+  @media only screen and (max-width: 769px) {
+    .content-side {
+        position:static;
+        display: inline-flex;
+    }
+    
+    p {
+        padding: 0px 20px;
+    }
+  }
