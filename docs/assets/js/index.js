@@ -58,7 +58,16 @@ function puzzle1() {
 // puzzle1field
 // confirm1button
 
-function confirm1button(buttonName, e) {
+$(document).on("keypress", "input", function(e){
+    if(e.which == 13){
+        //var inputVal = $(this).val();
+        //alert("You've entered: " + inputVal);
+
+        $('#confirm1button').click();
+    }
+});
+
+function confirm1button() {
     
 
     var answer1swal = $('#puzzle1field').val();
