@@ -214,6 +214,8 @@ function CHF() {
                 showCancelButton: false,
                 showConfirmButton: false,
                 icon: "success",
+                timer: 1500,
+                timerProgressBar: true,
                 didOpen: () => {
                     timerInterval = setInterval(() => { }, 100)
                 },
@@ -243,6 +245,8 @@ function SCHF() {
                 allowOutsideClick: false,
                 showCancelButton: false,
                 showConfirmButton: false,
+                timer: 1500,
+                timerProgressBar: true,
                 icon: "success",
                 didOpen: () => {
                     timerInterval = setInterval(() => { }, 100)
@@ -274,6 +278,8 @@ function REBORN() {
                 showCancelButton: false,
                 showConfirmButton: false,
                 icon: "success",
+                timer: 1500,
+                timerProgressBar: true,
                 didOpen: () => {
                     timerInterval = setInterval(() => { }, 100)
                 },
