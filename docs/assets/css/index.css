@@ -90,88 +90,50 @@ ul.navbar-nav .nav-item .nav-link {
   color: indianred;
 }
 
-/* bubble style */
-.hoverBubble {
-  background: #333333;
-  color: #ffffff;
-  cursor: pointer;
+.hidden-content {
   opacity: 0;
-  padding: 5px;
-  position: absolute;
-  text-align: left;
-  visibility: hidden;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-transition: all 0.25s;
-  -moz-transition: all 0.25s;
-  -ms-transition: all 0.25s;
-  -o-transition: all 0.25s;
-  transition: all 0.25s;
+  transition: 1s ease-in-out;
+  margin-top: -240px;
+  border: 2px solid #808080;
+  border-radius: 20px;
+  color: indianred;
+  background-image: linear-gradient(#808080, white, black);
 }
 
-.bubblePosition {
-  bottom: 115%;
-  height: inherit;
-  left: 0;
-  min-height: 35px;
-  top: auto;
-  width: 170px;
-}
-
-.hoverBubble:after,
-.bubblePosition:after {
-  border: 8px solid transparent;
-  border-top-color: #333333;
-  bottom: -15px;
-  content: '';
-  height: 0px;
-  left: 5%;
-  margin: 0 auto;
-  position: absolute;
-  width: 0px;
-}
-
-/* bubble hover */
-#download:hover .hoverBubble {
+#download:hover+ .hidden-content, .hidden-content:hover {
   opacity: 1;
-  visibility: visible;
-  -webkit-transition: all 0.25s;
-  -moz-transition: all 0.25s;
-  -ms-transition: all 0.25s;
-  -o-transition: all 0.25s;
-  transition: all 0.25s;
-}
-
-/* content in the bubble */
-.hoverBubble i {
-  display: block;
-  text-align: center;
-}
-
-.redBubble h3,
-.redBubble i {
-  color: #b23333;
-}
-
-.redBubble p {
-  color: whitesmoke;
-  font-size: 9px;
-  text-align: center;
+  transition: 1s ease-in-out;
 }
 
 .flexity {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 320px;
 }
 
-.flexity i {
-  float: left;
-  padding: 0px 10px;
-  margin-bottom: 10px;
+.flexity::after {
+  content: "";
+  border: 20px solid transparent;
+  position: absolute;
 }
+
+.comment.flexity::after {
+  border-top-color: #808080;
+  border-bottom: 0;
+  bottom: -20px; 
+  left: 50%;
+  margin-left: -20px;
+}
+
+.comment i {
+  font-size: 20px;
+}
+
+.comment i:hover {
+  cursor: pointer;
+}
+
 
 .swal2-modal {
   background-image: linear-gradient(grey, black);
