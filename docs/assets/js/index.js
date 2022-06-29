@@ -203,6 +203,7 @@ function CHF() {
         allowEscapeKey: false,
         allowOutsideClick: false,
         confirmButtonText: "CONFIRM",
+        showCancelButton: true,
         cancelButtonText: "CANCEL"
     }).then((result) => {
         if(result.isConfirmed) {
@@ -232,6 +233,7 @@ function SCHF() {
         allowEscapeKey: false,
         allowOutsideClick: false,
         confirmButtonText: "CONFIRM",
+        showCancelButton: true,
         cancelButtonText: "CANCEL"
     }).then((result) => {
         if(result.isConfirmed) {
@@ -261,6 +263,7 @@ function REBORN() {
         allowEscapeKey: false,
         allowOutsideClick: false,
         confirmButtonText: "CONFIRM",
+        showCancelButton: true,
         cancelButtonText: "CANCEL"
     }).then((result) => {
         if(result.isConfirmed) {
