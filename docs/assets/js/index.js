@@ -6,6 +6,7 @@ function google() {
         icon: "question",
         showConfirmButton: true,
         showCancelButton: true,
+        confirmButtonText: "Confirm"
     }).then((result) => {
         if(result.isConfirmed) {
             swal.fire({
@@ -38,6 +39,7 @@ function stackoverflow() {
         icon: "question",
         showConfirmButton: true,
         showCancelButton: true,
+        confirmButtonText: "Confirm"
     }).then((result) => {
         if(result.isConfirmed) {
             swal.fire({
@@ -70,6 +72,7 @@ function discord() {
         icon: "question",
         showConfirmButton: true,
         showCancelButton: true,
+        confirmButtonText: "Confirm"
     }).then((result) => {
         if(result.isConfirmed) {
             swal.fire({
@@ -94,6 +97,39 @@ function discord() {
     })
 }
 
+function codepen() {
+    swal.fire({
+        allowEscapeKey: false,
+        allowOutsideClick: false,
+        html: "Are you sure you want to go to this page?",
+        icon: "question",
+        showConfirmButton: true,
+        showCancelButton: true,
+        confirmButtonText: "Confirm"
+    }).then((result) => {
+        if(result.isConfirmed) {
+            swal.fire({
+                timerProgressBar: true,
+                timer: 2000,
+                allowEscapeKey: false,
+                allowOutsideClick: false,
+                icon: "info",
+                html: "You're now redirecting to codepen profile of this creator.",
+                showConfirmButton: false,
+                showCancelButton: false,
+                didOpen: () => {
+                    timerInterval = setInterval(() => {
+                    }, 100)
+                },
+                willClose: () => {
+                    clearInterval(timerInterval)
+                    window.open("https://www.codeply.com/u/paralumxn")
+                }
+            })
+        }
+    })
+}
+
 function github() {
     swal.fire({
         allowEscapeKey: false,
@@ -102,6 +138,7 @@ function github() {
         icon: "question",
         showConfirmButton: true,
         showCancelButton: true,
+        confirmButtonText: "Confirm"
     }).then((result) => {
         if(result.isConfirmed) {
             swal.fire({
@@ -134,6 +171,7 @@ function gitlab() {
         icon: "question",
         showConfirmButton: true,
         showCancelButton: true,
+        confirmButtonText: "Confirm"
     }).then((result) => {
         if(result.isConfirmed) {
             swal.fire({
@@ -152,6 +190,93 @@ function gitlab() {
                 willClose: () => {
                     clearInterval(timerInterval)
                     window.open("https://gitlab.com/Paralumxn")
+                }
+            })
+        }
+    })
+}
+
+function CHF() {
+    swal.fire({
+        html: "Are you sure to download these file?",
+        icon: "question",
+        allowEscapeKey: false,
+        allowOutsideClick: false,
+        confirmButtonText: "CONFIRM",
+        cancelButtonText: "CANCEL"
+    }).then((result) => {
+        if(result.isConfirmed) {
+            swal.fire({
+                html: "You're now redirecting.<br>Please wait.",
+                allowOutsideClick: false,
+                allowOutsideClick: false,
+                showCancelButton: false,
+                showConfirmButton: false,
+                icon: "success",
+                didOpen: () => {
+                    timerInterval = setInterval(() => { }, 100)
+                },
+                willClose: () => {
+                    clearInterval(timerInterval);
+                    window.open("https://www.mediafire.com/file/scsuo6bri08kaph/Command_Handler.rar/file")
+                }
+            })
+        }
+    })
+}
+
+function SCHF() {
+    swal.fire({
+        html: "Are you sure to download these file?",
+        icon: "question",
+        allowEscapeKey: false,
+        allowOutsideClick: false,
+        confirmButtonText: "CONFIRM",
+        cancelButtonText: "CANCEL"
+    }).then((result) => {
+        if(result.isConfirmed) {
+            swal.fire({
+                html: "You're now redirecting.<br>Please wait.",
+                allowOutsideClick: false,
+                allowOutsideClick: false,
+                showCancelButton: false,
+                showConfirmButton: false,
+                icon: "success",
+                didOpen: () => {
+                    timerInterval = setInterval(() => { }, 100)
+                },
+                willClose: () => {
+                    clearInterval(timerInterval);
+                    window.open("https://www.mediafire.com/file/8t845jouyo6yo1d/slashbot.rar/file")
+                }
+            })
+        }
+    })
+}
+
+function REBORN() {
+    swal.fire({
+        html: "Are you sure to download these file?",
+        icon: "question",
+        allowEscapeKey: false,
+        allowOutsideClick: false,
+        confirmButtonText: "CONFIRM",
+        cancelButtonText: "CANCEL"
+    }).then((result) => {
+        if(result.isConfirmed) {
+            swal.fire({
+                html: "You're now redirecting.<br>Please wait.",
+                allowOutsideClick: false,
+                allowOutsideClick: false,
+                showCancelButton: false,
+                showConfirmButton: false,
+                icon: "success",
+                didOpen: () => {
+                    timerInterval = setInterval(() => { }, 100)
+                },
+                willClose: () => {
+                    clearInterval(timerInterval);
+                    window.open("https://www.mediafire.com/file/16hubv5joqmnkq8/Reborn.rar/file")
                 }
             })
         }

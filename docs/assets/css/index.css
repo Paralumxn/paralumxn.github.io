@@ -82,10 +82,95 @@ ul.navbar-nav .nav-item .nav-link {
 #stackoverflow:hover,
 #discord:hover,
 #github:hover,
-#gitlab:hover {
+#gitlab:hover,
+#codepen:hover,
+#download:hover {
   transform: scale(2.0);
   transition: 0.2s ease;
   color: indianred;
+}
+
+/* bubble style */
+.hoverBubble {
+  background: #333333;
+  color: #ffffff;
+  cursor: pointer;
+  opacity: 0;
+  padding: 5px;
+  position: absolute;
+  text-align: left;
+  visibility: hidden;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.bubblePosition {
+  bottom: 115%;
+  height: inherit;
+  left: 0;
+  min-height: 35px;
+  top: auto;
+  width: 170px;
+}
+
+.hoverBubble:after,
+.bubblePosition:after {
+  border: 8px solid transparent;
+  border-top-color: #333333;
+  bottom: -15px;
+  content: '';
+  height: 0px;
+  left: 5%;
+  margin: 0 auto;
+  position: absolute;
+  width: 0px;
+}
+
+/* bubble hover */
+#download:hover .hoverBubble {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+/* content in the bubble */
+.hoverBubble i {
+  display: block;
+  text-align: center;
+}
+
+.redBubble h3,
+.redBubble i {
+  color: #b23333;
+}
+
+.redBubble p {
+  color: whitesmoke;
+  font-size: 9px;
+  text-align: center;
+}
+
+.flexity {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.flexity i {
+  float: left;
+  padding: 0px 10px;
+  margin-bottom: 10px;
 }
 
 .swal2-modal {
