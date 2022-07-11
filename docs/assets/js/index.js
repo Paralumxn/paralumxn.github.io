@@ -221,7 +221,7 @@ function CHF() {
                 },
                 willClose: () => {
                     clearInterval(timerInterval);
-                    window.open("https://www.mediafire.com/file/scsuo6bri08kaph/Command_Handler.rar/file")
+                    window.open("https://www.mediafire.com/file/sxqw6ogqd2d9kk7/Command_Handler.rar/file")
                 }
             })
         }
